@@ -1,5 +1,7 @@
 package SistemaFinanceiro;
 
+import java.util.Scanner;
+
 public class Funcionario extends PessoaFisica {
     private String dataAdmissao;
     private String dataDemissao;
@@ -41,12 +43,23 @@ public class Funcionario extends PessoaFisica {
     @Override
     public void entrar() {
         super.entrar();
-        
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite a data de admissão: ");
+        setDataAdmissao(scanner.nextLine());
+        System.out.print("Digite a data de demissão: ");
+        setDataDemissao(scanner.nextLine());
+        System.out.print("Digite o CTPS: ");
+        setCtps(scanner.nextLine());
+        System.out.print("Digite o salário: ");
+        setSalario(scanner.nextDouble());
     }
 
     @Override
     public void imprimir() {
         super.imprimir();
-      
+        System.out.println("Data de Admissão: " + getDataAdmissao());
+        System.out.println("Data de Demissão: " + getDataDemissao());
+        System.out.println("CTPS: " + getCtps());
+        System.out.println("Salário: " + getSalario());
     }
 }

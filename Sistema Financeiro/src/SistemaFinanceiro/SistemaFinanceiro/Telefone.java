@@ -1,8 +1,13 @@
 package SistemaFinanceiro;
 
+import java.util.Scanner;
+
 public class Telefone {
     private int ddd;
     private long numero;
+
+    public Telefone() {
+    }
 
     public int getDdd() {
         return ddd;
@@ -21,11 +26,14 @@ public class Telefone {
     }
 
     public void entrar() {
-      
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o DDD: ");
+        setDdd(scanner.nextInt());
+        System.out.print("Digite o número: ");
+        setNumero(scanner.nextLong());
     }
 
     public void imprimir() {
-       
+        System.out.println("Telefone: (" + getDdd() + ") " + getNumero());
     }
 }
-

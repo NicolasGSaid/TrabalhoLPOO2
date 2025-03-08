@@ -1,5 +1,7 @@
 package SistemaFinanceiro;
 
+import java.util.Scanner;
+
 public abstract class PessoaFisica extends Pessoa {
     private String cpf;
     private String rg;
@@ -32,12 +34,20 @@ public abstract class PessoaFisica extends Pessoa {
     @Override
     public void entrar() {
         super.entrar();
-        
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o CPF: ");
+        setCpf(scanner.nextLine());
+        System.out.print("Digite o RG: ");
+        setRg(scanner.nextLine());
+        System.out.print("Digite o emissor do RG: ");
+        setEmissor(scanner.nextLine());
     }
 
     @Override
     public void imprimir() {
         super.imprimir();
-       
+        System.out.println("CPF: " + getCpf());
+        System.out.println("RG: " + getRg());
+        System.out.println("Emissor do RG: " + getEmissor());
     }
 }
