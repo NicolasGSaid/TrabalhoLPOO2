@@ -2,6 +2,9 @@ package SistemaFinanceiro;
 
 import java.util.Scanner;
 
+@SuppressWarnings("resource")
+
+
 public class Receber extends Financeiro {
     private Cliente cliente;
     private String notaFiscal;

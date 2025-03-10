@@ -2,6 +2,9 @@ package SistemaFinanceiro;
 
 import java.util.Scanner;
 
+@SuppressWarnings("resource")
+
+
 public abstract class PessoaFisica extends Pessoa {
     private String cpf;
     private String rg;

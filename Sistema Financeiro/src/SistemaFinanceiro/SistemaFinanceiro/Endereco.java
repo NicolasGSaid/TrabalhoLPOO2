@@ -2,6 +2,9 @@ package SistemaFinanceiro;
 
 import java.util.Scanner;
 
+@SuppressWarnings("resource")
+
+
 public class Endereco {
     private String rua;
     private String numero;

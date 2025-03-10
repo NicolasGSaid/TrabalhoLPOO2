@@ -2,6 +2,9 @@ package SistemaFinanceiro;
 
 import java.util.Scanner;
 
+@SuppressWarnings("resource")
+
+
 public abstract class PessoaJuridica extends Pessoa {
     private String cnpj;
     private String inscricaoEstadual;

@@ -2,6 +2,9 @@ package SistemaFinanceiro;
 
 import java.util.Scanner;
 
+@SuppressWarnings("resource")
+
+
 public class Telefone {
     private int ddd;
     private long numero;

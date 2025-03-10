@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+@SuppressWarnings("resource")
+
 public class MenuPrincipal {
     private List<Cliente> clientes;
     private List<Fornecedor> fornecedores;
@@ -61,8 +63,6 @@ public class MenuPrincipal {
                     System.out.println("Opção inválida! Tente novamente.");
             }
         } while (option != 7);
-
-        scanner.close();
     }
 
     public void subMenu(String tipoCadastro) {

@@ -2,6 +2,8 @@ package SistemaFinanceiro;
 
 import java.util.Scanner;
 
+@SuppressWarnings("resource")
+
 public class Cliente extends PessoaJuridica {
     private double limiteCredito;
     private Endereco enderecoCobranca;

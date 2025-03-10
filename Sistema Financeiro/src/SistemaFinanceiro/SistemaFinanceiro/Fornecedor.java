@@ -2,6 +2,9 @@ package SistemaFinanceiro;
 
 import java.util.Scanner;
 
+@SuppressWarnings("resource")
+
+
 public class Fornecedor extends PessoaJuridica {
     private double limiteCompra;
     private String dataCadastro;

@@ -2,6 +2,9 @@ package SistemaFinanceiro;
 
 import java.util.Scanner;
 
+@SuppressWarnings("resource")
+
+
 public class Pagar extends Financeiro {
     private Fornecedor fornecedor;
     private String boleto;

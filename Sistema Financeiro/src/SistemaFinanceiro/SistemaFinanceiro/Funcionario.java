@@ -2,6 +2,9 @@ package SistemaFinanceiro;
 
 import java.util.Scanner;
 
+@SuppressWarnings("resource")
+
+
 public class Funcionario extends PessoaFisica {
     private String dataAdmissao;
     private String dataDemissao;
